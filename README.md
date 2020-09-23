@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/mythsman/hexo-douban.svg)](https://github.com/mythsman/hexo-douban/blob/master/LICENSE)
 
-基于[hexo-douban](https://github.com/mythsman/hexo-douban)插件的二次开发插，构建页面不是最终目的，最终目的是在博客首页/特定页嵌入不同平台的最新动态！
+基于xpath解析页面源代码来构建新页面，构建页面不是最终目的，最终目的是在博客首页/特定页嵌入你想展示的不同平台的最新动态！（只需配置相关ID即可）
 
 任务列表：
 
