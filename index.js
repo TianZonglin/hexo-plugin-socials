@@ -8,21 +8,21 @@ var log = require('hexo-log')({
 });
 
 hexo.extend.generator.register('books', function (locals) {
-  if (!this.config.douban || !this.config.douban.builtin) {
+  if (!this.config.socials || !this.config.socials.builtin) {
     return;
   }
   return require('./lib/books-generator').call(this, locals);
 });
 
 hexo.extend.generator.register('movies', function (locals) {
-  if (!this.config.douban || !this.config.douban.builtin) {
+  if (!this.config.socials || !this.config.socials.builtin) {
     return;
   }
   return require('./lib/movies-generator').call(this, locals);
 });
 
 hexo.extend.generator.register('games', function (locals) {
-  if (!this.config.douban || !this.config.douban.builtin) {
+  if (!this.config.socials || !this.config.socials.builtin) {
     return;
   }
   return require('./lib/games-generator').call(this, locals);
@@ -36,7 +36,7 @@ var options = {
   ]
 };
 
-hexo.extend.console.register('douban', 'Generate pages from douban', options, function (args) {
+hexo.extend.console.register('socials', 'Generate pages from douban', options, function (args) {
 
   var names = [];
 
@@ -86,7 +86,7 @@ hexo.extend.console.register('douban', 'Generate pages from douban', options, fu
     });
     names.forEach(name => {
       var id = name + "/index.html";
-      id = id.replace(/movies/,"film");
+ 
       self.route.get(id) && self.route.get(id)._data().then(function (contents) {
         fs.writeFile(path.join(publicDir, id), contents);
         log.info("Generated: %s", id);
