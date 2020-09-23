@@ -9,11 +9,11 @@ var log = require('hexo-log')({
 
  
 
-hexo.extend.generator.register('movies', function (locals) {
+hexo.extend.generator.register('psocials', function (locals) {
   if (!this.config.socials || !this.config.socials.builtin) {
     return;
   }
-  return require('./lib/movies-generator').call(this, locals);
+  return require('./lib/psocials-generator').call(this, locals);
 });
 
  
@@ -34,26 +34,26 @@ hexo.extend.console.register('usocial', 'Generate pages from socials', options, 
     names.push("books");
   }
   if (args.m || args.movies) {
-    names.push("movies");
+    names.push("psocials");
   }
 
   if (args.g || args.games) {
     names.push("games");
   }
   if (names.length === 0) {
-    names.push("books", "movies", "games");
+    names.push("psocials");
   }
 
-  var doubanLoadingPath = '/assets/douban-loading.gif';
+  //var doubanLoadingPath = '/assets/douban-loading.gif';
   //Load static files
-  hexo.extend.generator.register('douban-gif', function (locals) {
-    return {
-      path: doubanLoadingPath,
-      data: function () {
-        return fs.createReadStream(path.join(__dirname, '/lib/templates/douban-loading.gif'));
-      }
-    };
-  });
+  //hexo.extend.generator.register('psocials-gif', function (locals) {
+  //  return {
+  //    path: doubanLoadingPath,
+  //    data: function () {
+  //      return fs.createReadStream(path.join(__dirname, '/lib/templates/psocials-loading.gif'));
+  //    }
+  //  };
+  //});
 
   //Register route
   names.forEach(name => {
