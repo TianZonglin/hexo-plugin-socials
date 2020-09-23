@@ -7,12 +7,7 @@ var log = require('hexo-log')({
   silent: false
 });
 
-hexo.extend.generator.register('books', function (locals) {
-  if (!this.config.socials || !this.config.socials.builtin) {
-    return;
-  }
-  return require('./lib/books-generator').call(this, locals);
-});
+ 
 
 hexo.extend.generator.register('movies', function (locals) {
   if (!this.config.socials || !this.config.socials.builtin) {
@@ -21,22 +16,17 @@ hexo.extend.generator.register('movies', function (locals) {
   return require('./lib/movies-generator').call(this, locals);
 });
 
-hexo.extend.generator.register('games', function (locals) {
-  if (!this.config.socials || !this.config.socials.builtin) {
-    return;
-  }
-  return require('./lib/games-generator').call(this, locals);
-});
+ 
 
 var options = {
   options: [
-    { name: '-b, --books', desc: 'Generate douban books only' },
-    { name: '-m, --movies', desc: 'Generate douban movies only' },
-    { name: '-g, --games', desc: 'Generate douban games only' }
+    { name: '-b, --books', desc: 'Generate socials books only' },
+    { name: '-m, --movies', desc: 'Generate socials movies only' },
+    { name: '-g, --games', desc: 'Generate socials games only' }
   ]
 };
 
-hexo.extend.console.register('socials', 'Generate pages from douban', options, function (args) {
+hexo.extend.console.register('usocial', 'Generate pages from socials', options, function (args) {
 
   var names = [];
 
@@ -85,8 +75,7 @@ hexo.extend.console.register('socials', 'Generate pages from douban', options, f
       stream.pipe(fs.createWriteStream(path.join(publicDir, doubanLoadingPath)));
     });
     names.forEach(name => {
-      var id = name + "/index.html";
- 
+      var id = name + "/index.html"; 
       self.route.get(id) && self.route.get(id)._data().then(function (contents) {
         fs.writeFile(path.join(publicDir, id), contents);
         log.info("Generated: %s", id);
