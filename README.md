@@ -2,7 +2,16 @@
 
 [![GitHub license](https://img.shields.io/github/license/mythsman/hexo-douban.svg)](https://github.com/mythsman/hexo-douban/blob/master/LICENSE)
 
-基于HEXO豆瓣插件 [hexo-douban](https://github.com/mythsman/hexo-douban) 的二次开发插，强烈建议先试用原插件，如果您觉得以下特性更能满足您的需要，那么再使用本插件。
+基于[hexo-douban](https://github.com/mythsman/hexo-douban)插件的二次开发插，构建页面不是最终目的，最终目的是在博客首页/特定页嵌入不同平台的最新动态！
+
+任务列表：
+
+- 豆瓣动态：详见插件[hexo-douban-list](https://github.com/TianZonglin/hexo-douban-list)；
+- 知乎动态：包括问题点赞/已完成、文章点赞/未完成、回答问题/未完成、个人动态/未完成；
+- Github动态：Issue列表/未完成、Star项目/未完成（已有插件？）；
+- QQ空间动态：空间说说列表/未完成；
+- 哔哩哔哩动态：动态、视频、文章页/未完成（已有插件？）；
+
 
 主要特性：
 
