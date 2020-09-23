@@ -1,8 +1,8 @@
 {
   "_from": "hexo-plugin-socials",
-  "_id": "hexo-plugin-socials@1.0.3",
+  "_id": "hexo-plugin-socials@1.0.5",
   "_inBundle": false,
-  "_integrity": "sha512-7JW0C0mlKZAHqbusSt+LRkCH+WOLmUDB+vS73RnHN2LaEJHDVp6cEd5ku7WujDG8w79X5oZsgkhRCmrY+17oaA==",
+  "_integrity": "sha512-wWDcBddFWxXGPG+VbZ+gFLQ6nz0NCe5eSjhWbC+Ngkhp2ZSfvKebwqNyi7Hv8gvCOUnP2O2lQKQjhaDZetfInA==",
   "_location": "/hexo-plugin-socials",
   "_phantomChildren": {
     "ansi-regex": "2.1.1",
@@ -61,8 +61,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/hexo-plugin-socials/-/hexo-plugin-socials-1.0.3.tgz",
-  "_shasum": "68ac8efce27b168d7e3682cf9fc685263f388b8d",
+  "_resolved": "https://registry.npmjs.org/hexo-plugin-socials/-/hexo-plugin-socials-1.0.5.tgz",
+  "_shasum": "29e43bc90882e5b5676c19b042e07ec1ba7c8fe2",
   "_spec": "hexo-plugin-socials",
   "_where": "D:\\123保险柜\\Volantis",
   "bugs": {
@@ -106,5 +106,5 @@
     "type": "git",
     "url": "git+https://github.com/TianZonglin/hexo-plugin-socials.git"
   },
-  "version": "1.0.5"
+  "version": "1.0.6"
 }
