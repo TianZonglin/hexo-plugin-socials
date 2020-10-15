@@ -78,6 +78,3 @@ socials:
 
 如果构建页面为空或404，且日志输出为 `INFO  0 items have been loaded in xx ms`，这时怀疑您的IP由于多次请求知乎的页面而被知乎封禁了，一般第二天会解禁，使用代理或更改IP即可解决。
  
-## 示例
-
-https://www.cz5h.com/socials
