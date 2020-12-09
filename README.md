@@ -1,3 +1,11 @@
+# 知乎更新了网站加载方式，原有XPATH解析已失效！
+# 知乎更新了网站加载方式，原有XPATH解析已失效！
+# 知乎更新了网站加载方式，原有XPATH解析已失效！
+
+# 此插件已失效！
+# 此插件已失效！
+# 此插件已失效！
+
 # hexo-plugin-socials
 
 [![GitHub license](https://img.shields.io/github/license/mythsman/hexo-douban.svg)](https://github.com/mythsman/hexo-douban/blob/master/LICENSE)
